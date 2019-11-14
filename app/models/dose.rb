@@ -6,4 +6,4 @@ class Dose < ApplicationRecord
   validates :cocktail_id, presence: true, uniqueness: { scope: :ingredient_id }
   validates :ingredient_id, presence: true
 end
-# validates :name, uniqueness: { scope: :year,
+# https://guides.rubyonrails.org/active_record_validations.html#uniqueness

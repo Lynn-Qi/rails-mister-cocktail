@@ -1,0 +1,14 @@
+<h1>Cocktail details</h1>
+<ul>
+  <li><%= @cocktail.name %></li>
+</ul>
+
+<div>
+<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+</div>
+
+<div>
+<%= link_to "Back to cocktails list", cocktails_path %>
+</div>
+
+
