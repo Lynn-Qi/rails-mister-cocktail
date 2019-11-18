@@ -1,7 +1,9 @@
 <h1>Cocktail details</h1>
 
 <h3><%= @cocktail.name %></h3>
-
+<% if @cocktail.photo.present? %>
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+<% end %>
 
 <div>
   <ul> 
@@ -11,7 +13,7 @@
   </ul>
 </div>
 
-<div>
+<div class="add-dose">
 <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
 </div>
 

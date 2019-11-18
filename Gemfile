@@ -8,6 +8,8 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'faker'
 
+gem 'cloudinary', '~> 1.9.1'
+gem 'carrierwave', '~> 1.2'
 # don’t want to share those secret keys on Github
 gem 'dotenv-rails', groups: [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
